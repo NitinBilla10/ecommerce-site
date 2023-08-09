@@ -1,0 +1,28 @@
+.category p {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #F1F0F0;
+  width: 234px;
+  padding: 0 10px;
+  border-radius: 3px;
+}
+.category .categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.category .categories button {
+  margin: 0 40px;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+}
+.category .categories button .material-symbols-outlined {
+  font-size: 50px;
+  font-weight: 300;
+}/*# sourceMappingURL=categories.css.map */

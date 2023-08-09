@@ -1,0 +1,53 @@
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #F1F0F0;
+  width: 170px;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.todaydeal {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todaydeal .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 0 10px;
+  width: 300.892px;
+  height: 350px;
+}
+.todaydeal .card img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+.todaydeal .card .producttitle {
+  color: #454D4A;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+}
+.todaydeal .card .productprice {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16.048px;
+  font-style: normal;
+  font-weight: 600;
+}
+.todaydeal .card .productogprice {
+  color: #454D4A;
+  font-family: Poppins;
+  font-size: 14.042px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration-line: line-through;
+}/*# sourceMappingURL=todaydeal.css.map */
