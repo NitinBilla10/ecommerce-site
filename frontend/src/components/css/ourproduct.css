@@ -1,0 +1,28 @@
+.ourproducts .headertitle {
+  color: #000;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+}
+.ourproducts .ourproductslist .container .card {
+  width: 280px;
+  height: 220px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.ourproducts .ourproductslist .container .card .ourproductimg {
+  width: 279.043px;
+  height: 187.889px;
+  background-color: #303030;
+}
+.ourproducts .ourproductslist .container .card .ourproductdescription .producttitle {
+  color: #454545;
+  font-size: 13px;
+  font-weight: 300;
+}
+.ourproducts .ourproductslist .container .card .ourproductdescription .productprice {
+  color: #000;
+  font-size: 16.98px;
+  font-weight: 600;
+}/*# sourceMappingURL=ourproduct.css.map */
