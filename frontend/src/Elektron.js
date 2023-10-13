@@ -6,6 +6,7 @@ import './components/css/elektron.css'
 import Todaydeal from './components/Todaydeal'
 import Ourproducts from './components/Ourproducts'
 import Footer from './components/Footer'
+import Productcard from './components/Productcard'
 
 function Elektron() {
   return (
@@ -18,7 +19,9 @@ function Elektron() {
       <Ourproducts/>
     </div>
     <Footer/>
+    <Productcard/>
     </div>
+    
   )
 }
 

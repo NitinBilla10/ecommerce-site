@@ -1,0 +1,102 @@
+.productcard {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+.productcard .productimgs {
+  width: 170px;
+  height: 138px;
+  border-radius: 4px;
+  background: #F5F5F5;
+  margin-top: 10px;
+}
+.productcard .mainimg {
+  width: 500px;
+  height: 600px;
+  border-radius: 4px;
+  background: #F5F5F5;
+}
+.productcard .productdetails {
+  width: 400px;
+}
+.productcard .producttitle {
+  font-size: 24px;
+  font-weight: 600;
+}
+.productcard .productprice {
+  font-size: 24px;
+  font-weight: 400;
+}
+.productcard .productdescription {
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 25px;
+  border-bottom: 0.5px solid black;
+}
+.productcard .productcardmenu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.productcard .productcardmenu .buybtn {
+  display: inline-flex;
+  padding: 10px 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: #4a98e1;
+  border: none;
+  color: white;
+}
+.productcard .productcardmenu .wishlistbtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.productcard .productcardmenu .wishlistbtn svg {
+  width: 32px;
+  height: 32px;
+}
+.productcard .featurelist {
+  margin-top: 30px;
+  width: 399px;
+  height: 180px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.productcard .featurelist .freedelivery {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  margin-bottom: 15px;
+}
+.productcard .featurelist .return {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.productcard .featurelist h6 {
+  font-size: 16px;
+  font-weight: 500;
+  width: 276px;
+}
+.productcard .featurelist p {
+  font-size: 12px;
+  font-weight: 500;
+  width: 276px;
+}
+.productcard .featurelist svg {
+  width: 40px;
+  height: 40px;
+}/*# sourceMappingURL=productcard.css.map */
