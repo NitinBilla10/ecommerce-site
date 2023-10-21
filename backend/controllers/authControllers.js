@@ -6,27 +6,25 @@ import JWT from "jsonwebtoken";
 
 export const registerController = async (req,res)=>{
    try{
-       const {name,email,password,phone,address} = req.body;
+       const {name,email,password,phone,address,role} = req.body;
        if(!name){
-        return res.send("Name requires!!")
+        return res.send({ success:false,message:"name requires!!"})
        }
        if(!email){
-        return  res.send("email requires!!")
+        return  res.send({ success:false,message:"email requires!!"})
        }
        if(!password){
-        return res.send("password requires!!")
+        return res.send({ success:false,message:"password requires!!"})
        }
        if(!phone){
-        return res.send("phone requires!!")
+        return res.send({ success:false,message:"phone requires!!"})
        }
        if(!address){
-        return res.send("address requires!!")
+        return res.send({ success:false,message:"address requires!!"})
        }
-  
-
          const existinguser = await userschema.findOne({email});
          if(existinguser){
-            return res.send("Already Existing User, Please Login ");
+            return res.send({ success:false,message:"Already Existing User, Please Login "});
          }
         const hashedpassword = await hashpassword(password)
 

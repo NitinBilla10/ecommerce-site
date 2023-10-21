@@ -1,0 +1,14 @@
+{
+  "proxy": "http://localhost:3000",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "nodemon": "^3.0.1"
+  },
+  "scripts": {
+    "frontend": "npm start --prefix ./frontend",
+    "server": "npm start --prefix ./backend",
+   
+    "dev": "concurrently \"npm run frontend \" \"npm run server \""
+  }
+}

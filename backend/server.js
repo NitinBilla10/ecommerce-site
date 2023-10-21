@@ -11,7 +11,7 @@ import authRoute from './routes/authRoute'
 
 
 
-
+app.use(cors())
 //database connection
 connectDB()
 
@@ -48,7 +48,8 @@ app.use("/v1/auth", authRoute)
 // )
 
 
-app.use(cors())
+
+
 
 app.listen(process.env.PORT || PORT , ()=>{
     console.log(`Listening at Port: ${PORT}`)
