@@ -7,8 +7,12 @@ import Todaydeal from './components/Todaydeal'
 import Ourproducts from './components/Ourproducts'
 import Footer from './components/Footer'
 import Productcard from './components/Productcard'
+import { useAuth } from './context/auth'
+import { Route, Routes } from 'react-router-dom'
+import ProductsbyCategory from './components/ProductsbyCategory'
 
 function Elektron() {
+
   return (
     <div>
     <div className='maincontainer'>
@@ -19,7 +23,6 @@ function Elektron() {
       <Ourproducts/>
     </div>
     <Footer/>
-    <Productcard/>
     </div>
     
   )

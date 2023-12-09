@@ -22,6 +22,7 @@ h3 {
   margin: 0 10px;
   width: 300.892px;
   height: 350px;
+  margin-bottom: 20px;
 }
 .todaydeal .card img {
   width: 200px;
@@ -50,4 +51,4 @@ h3 {
   font-style: normal;
   font-weight: 400;
   text-decoration-line: line-through;
-}/*# sourceMappingURL=todaydeal.css.map */
+}

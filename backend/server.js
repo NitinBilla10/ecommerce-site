@@ -4,21 +4,22 @@ import bodyParser from 'body-parser';
 import cors from "cors";
 import path from 'path';
 import connectDB from './config/db.js';
-const PORT = 3000;
+import 'dotenv/config';
+
+import authRoute from './routes/authRoute.js'
+import productsRoute from './routes/productsRoute.js'
 
 
-import authRoute from './routes/authRoute'
 
 
-
-app.use(cors())
 //database connection
 connectDB()
+app.use(express.json({limit: '50mb'}))
 
 
 //middle ware
-app.use(bodyParser.json({limit: "50mb"}))
-app.use(bodyParser.urlencoded({extended: true , limit: "50mb"}))
+// app.use(bodyParser.json({limit: "50mb"}))
+// app.use(bodyParser.urlencoded({extended: true , limit: "50mb"}))
 
 //cors
 
@@ -27,32 +28,28 @@ app.use(( req, res, next) =>{
     req.header("Access-Control-Allow-Headers","*")
     next()
 })
+app.use(cors())
 
 //Routes
 app.use("/v1/auth", authRoute)
+app.use('/v1/products',productsRoute)
+import * as url from 'url';
+const __filename = url.fileURLToPath(import.meta.url);
+const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 
-// const buildpath =path.join(__dirname,"..","frontend","build");
-// // app.use('/uploads', express.static(path.join(__dirname, "/../uploads")))
-//  app.use( express.static(buildpath))
+app.use(express.static(path.join(__dirname,'../frontend/build')))
 
-// app.get("*", async (req,res)=>
-// {
-//      try{
-//         res.sendFile(path.join(buildpath, 'index.html'));
-//     }catch(e){
-//         res.send("Unexpected Error !!!")
-//         res.send(console.log(e))
-//     }
-// }
+app.use('*',function(req,res){
+    res.sendFile(path.join(__dirname,'../frontend/build/index.html'))
 
-// )
+})
 
 
 
 
 
-app.listen(process.env.PORT || PORT , ()=>{
-    console.log(`Listening at Port: ${PORT}`)
+app.listen(process.env.PORT, ()=>{
+    console.log(`Listening at Port: ${process.env.PORT}`)
 })
 
 

@@ -1,12 +1,14 @@
 import React from 'react'
 import './css/categories.css'
+import { useNavigate } from 'react-router-dom'
 function Categories() {
+  const navigate = useNavigate();
   return (
     <div className='category'>
 
       <div><p>Browse By Category :</p></div>
       <div className='categories'>
-      <button>
+      <button onClick={()=>navigate('/byCategory/phones')}>
         <div>
       <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
      <g clip-path="url(#clip0_811_6314)">
@@ -24,7 +26,7 @@ function Categories() {
      <div>
      Phones</div>
       </button>
-      <button>
+      <button onClick={()=>navigate('/byCategory/computer')}>
         <div>
       <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
      <g clip-path="url(#clip0_811_6345)">
@@ -43,7 +45,7 @@ function Categories() {
     <div>
     Computer</div>
       </button>
-      <button>
+      <button onClick={()=>navigate('/byCategory/watch')}>
         <div>
       <span class="material-symbols-outlined">
       watch_screentime
@@ -51,7 +53,7 @@ function Categories() {
       <div>
       Watch</div>
       </button>
-      <button>
+      <button onClick={()=>navigate('/byCategory/headphones')} >
         <div>
       <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
      <g clip-path="url(#clip0_811_1758)">
@@ -68,7 +70,7 @@ function Categories() {
         <div>
         Headphones</div>
       </button>
-      <button>
+      <button onClick={()=>navigate('/byCategory/camera')}>
         <div>
       <span class="material-symbols-outlined">
       photo_camera

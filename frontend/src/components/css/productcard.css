@@ -10,11 +10,12 @@
   background: #F5F5F5;
   margin-top: 10px;
 }
-.productcard .mainimg {
+.productcard .mainimg img{
   width: 500px;
   height: 600px;
   border-radius: 4px;
-  background: #F5F5F5;
+  object-fit: contain;
+ 
 }
 .productcard .productdetails {
   width: 400px;
@@ -99,4 +100,18 @@
 .productcard .featurelist svg {
   width: 40px;
   height: 40px;
-}/*# sourceMappingURL=productcard.css.map */
+}
+.productcard .add2cartbtn {
+   width: 200px;
+   display: flex;
+   padding: 10px 48px;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   border-radius: 4px;
+   background-color: #4a98e1;
+   color: white;
+   border: none;
+   margin-right: 20px;
+   
+}

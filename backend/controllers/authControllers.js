@@ -1,7 +1,8 @@
 
-import { comparepassword, hashpassword } from "../helpers/authhelper";
-import userschema from "../models/userschema";
+import { comparepassword, hashpassword } from "../helpers/authhelper.js";
+import userschema from "../models/userschema.js";
 import JWT from "jsonwebtoken";
+import 'dotenv/config'
 
 
 export const registerController = async (req,res)=>{
@@ -79,7 +80,7 @@ export const registerController = async (req,res)=>{
             message:"Invalid password"
          })
       }
-      const token = await JWT.sign({_id:user._id},"HHAKSKNSJDJSHJJB3243234",{
+      const token = await JWT.sign({_id:user._id},process.env.JSW_SCERETKEY,{
          expiresIn:"7d"
        });
        res.status(200).send({
@@ -96,7 +97,9 @@ export const registerController = async (req,res)=>{
        
    }
    catch(err){
+      console.log(err)
       res.status(500).send({
+        
          success:false,
          message:"ERROR IN LOGIN PAGE"
       });

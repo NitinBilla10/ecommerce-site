@@ -1,0 +1,11 @@
+.productsbycategory{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.productsbycategory h5{
+    margin: 30px 0;
+    background-color: darkgrey;
+    width: 500px;
+    padding: 20px;
+}

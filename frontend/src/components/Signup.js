@@ -14,7 +14,7 @@ function Signup() {
     const navigate = useNavigate();
     const handleSubmit=async()=>{
         try{
-           const res = await axios.post("http://localhost:3000/v1/auth/register",{name,email,password,phone,address});
+           const res = await axios.post("/v1/auth/register",{name,email,password,phone,address});
          
            if(res.data.success){
             toast.success("Registered Successfully");

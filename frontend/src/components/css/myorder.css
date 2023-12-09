@@ -1,0 +1,16 @@
+.myorders{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.myorders .card{
+    width: 700px;
+    overflow: hidden;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+.myorders .main{
+    border-bottom: 1px solid rgb(52, 50, 52);
+}

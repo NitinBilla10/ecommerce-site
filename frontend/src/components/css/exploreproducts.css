@@ -1,0 +1,77 @@
+.exploreproducts{
+    margin: 0 50px;
+}
+.exploreproducts h5{
+    width: 250px;
+}
+
+.maincontainer1 {
+    display:flex;
+
+}
+.filtersection{
+   border-right: 1px solid #6f6b6b;
+   height: 100%;
+   background: var(--Color---1, #e4e9fc);
+  
+   padding: 70px;
+   
+}
+.filtersection h4{
+     font-size: 20px;
+}
+.productssection{
+    height: 100%;
+}
+.exploreproducts .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0 10px;
+    width: 300.892px;
+    height: 350px;
+    margin-bottom: 20px;
+  }
+.exploreproducts .card img {
+    width: 200px;
+    height: 200px;
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+  }
+
+.exploreproducts .card .producttitle {
+    color: #454D4A;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+  }
+
+.exploreproducts .card .productprice {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16.048px;
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  .exploreproducts .card .productogprice {
+    color: #454D4A;
+    font-family: Poppins;
+    font-size: 14.042px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration-line: line-through;
+  }
+
+.categoryfilter{
+    margin-top: 20px;
+}
+.pricefilter{
+    margin-top: 20px;
+}
+.productssection {
+  width: 100%;
+}

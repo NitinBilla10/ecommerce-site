@@ -1,6 +1,10 @@
+
+
 .navbar {
   display: flex;
   align-items: center;
+  padding: 0 10px;
+  padding-top: 10px;
 }
 .navbar .logo {
   font-size: 25px;
@@ -19,5 +23,23 @@
   text-align: center;
   border: none;
   background-color: #F1F0F0;
-  border-radius: 3px;
-}/*# sourceMappingURL=navbar.css.map */
+}
+.navbar .menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu_cont{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.myproducts{
+  width: 80%;
+  display: block;
+  position: absolute;
+  
+}
+.menu .material-symbols-outlined{
+  color: black;
+}
