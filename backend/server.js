@@ -37,10 +37,10 @@ import * as url from 'url';
 const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 
-app.use(express.static(path.join(__dirname,'../frontend/build')))
+app.use(express.static(path.join(__dirname,'./build')))
 
 app.use('*',function(req,res){
-    res.sendFile(path.join(__dirname,'../frontend/build/index.html'))
+    res.sendFile(path.join(__dirname,'./build/index.html'))
 
 })
 
