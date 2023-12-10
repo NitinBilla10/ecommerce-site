@@ -46,7 +46,7 @@ const Productcard = () => {
             <button className='add2cartbtn' onClick={(e)=>(setCart([...cart,product]),localStorage.setItem('cart',JSON.stringify([...cart,product])) , toast.success("Product Add to cart successfully"))}> <span class="material-symbols-outlined">
                  add
                  </span> ADD TO CART</button>
-            <button className='buybtn'>Buy Now</button>
+            <button className='buybtn'  onClick={(e)=>(setCart([...cart,product]),localStorage.setItem('cart',JSON.stringify([...cart,product])) , toast.success("Product Add to cart successfully"))}>Buy Now</button>
         </div>
         <div className='featurelist'>
             <div className='freedelivery'>

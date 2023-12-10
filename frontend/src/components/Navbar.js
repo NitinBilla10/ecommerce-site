@@ -1,7 +1,7 @@
 import React from 'react'
 import './css/navbar.css'
 import { useAuth } from '../context/auth'
-import { Navigate, useNavigate } from 'react-router-dom'
+import {useNavigate } from 'react-router-dom'
 import { useCart } from '../context/cart'
 function Navbar() {
 
