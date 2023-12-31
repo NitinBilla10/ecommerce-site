@@ -17,9 +17,6 @@ connectDB()
 app.use(express.json({limit: '50mb'}))
 
 
-//middle ware
-// app.use(bodyParser.json({limit: "50mb"}))
-// app.use(bodyParser.urlencoded({extended: true , limit: "50mb"}))
 
 //cors
 
@@ -37,12 +34,12 @@ import * as url from 'url';
 const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 
-// app.use(express.static(path.join(__dirname,'./build')))
+app.use(express.static(path.join(__dirname,'./build')))
 
-// app.use('*',function(req,res){
-//     res.sendFile(path.join(__dirname,'./build/index.html'))
+app.use('*',function(req,res){
+    res.sendFile(path.join(__dirname,'./build/index.html'))
 
-// })
+})
 
 
 
