@@ -3,6 +3,7 @@
 ## Introduction
 
 Welcome to **Elektron**, a comprehensive e-commerce platform dedicated to buying and selling electronic products. Built using the MERN stack, this project offers a seamless and user-friendly experience for both customers and sellers. Our aim is to provide a robust and efficient online marketplace for electronic goods, ensuring a smooth browsing, transaction, and management experience.
+
 **Website Link:** https://weak-teal-cricket-toga.cyclic.app/
 
 ## Technologies Used
