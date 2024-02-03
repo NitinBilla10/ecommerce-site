@@ -21,7 +21,7 @@
     "express-formidable": "^1.2.0",
     "file-uri-to-path": "^2.0.0",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "7.0.3",
+    "mongoose": "7.3.3",
     "nodemon": "^2.0.22",
     "slugify": "^1.6.6",
     "url": "^0.11.3"
